@@ -1,23 +1,23 @@
 import { motion } from "motion/react";
 const App = () => {
   return (
-    <div className="bg-black w-full h-screen">
-      <motion.div
-      className="h-100 w-100 bg-amber-400 border-2 border-amber-100"
-      animate={{ 
-        rotate: 360,
-        x:800,
-       
-      }}
-      transition={{
-        duration:3,
-        delay:1
-      }}
-      >
+    
+      <div className="bg-black h-screen p-3">
+          <motion.div
+          animate={{
+            rotate:360,
+            x:300
+          }}
+          transition={{
+            delay:3,
+            duration:3
+          }}
+           className="h-80 w-80 bg-amber-300"
+           >
+          </motion.div>
+      </div>
+    
+  )
+}
 
-      </motion.div>
-    </div>
-  );
-};
-
-export default App;
+export default App
