@@ -4,20 +4,11 @@ const App = () => {
     
       <div className="bg-black h-screen p-3">
           <motion.div
-          initial={{
-            x:0,
-            y:0
+          whileHover={{
+            backgroundColor:'green'
           }}
-          animate={{
-            x:[0,800,800,0,0],
-            y:[0,0,400,400,0],
-            rotate:500
-          }}
-          transition={{
-            delay:1,
-            duration:3,
-            repeat:Infinity
-            
+          whileTap={{
+            scale:0.9
           }}
            className="h-80 w-80 bg-amber-300 border-2 border-amber-50 "
            >
